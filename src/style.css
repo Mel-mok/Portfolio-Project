@@ -8,6 +8,7 @@
 body {
   font-family: var(--page-font);
   width: 800px;
+  margin: 0 auto;
 }
 .heading-hero {
   text-align: center;
@@ -83,12 +84,82 @@ div p {
   padding: 18px 30px;
   font-size: 18px;
 }
+.about-hero {
+  padding-top: 184px;
+  width: 1160px;
+  height: 759px;
+  background-color: var(--background-color);
+}
+.profile h1 {
+  font-size: 64px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  color: black;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.profile h2 {
+  font-size: 18px;
+  color: var(--sub-heading-color);
+  margin-top: 20px;
+  font-weight: 400;
+}
+.profile p {
+  font-size: 16px;
+  width: 475px;
+  height: 140px;
+  font-size: 16px;
+  color: var(--sub-heading-color);
+  opacity: 70%;
+  line-height: 30px;
+}
+.profile-image {
+  width: 500px;
+  height: 560px;
+  border-radius: 20px;
+}
+.work-hero {
+  padding-top: 184px;
+  height: 2509px;
+  background-color: var(--background-color);
+  margin: 0 30px 5px 0;
+}
+
+.work-hero h1 {
+  font-size: 64px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  color: black;
+  line-height: 1;
+  margin-bottom: 5px;
+  width: 825px;
+  height: 170px;
+}
+
+.work-app h2 {
+  font-size: 24px;
+  color: var(--sub-heading-color);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.work-app p {
+  font-size: 14px;
+  color: var(--sub-heading-color);
+  opacity: 70%;
+  width: 336px;
+  margin-top: 5px;
+}
+.work-image {
+  width: 560px;
+  border-radius: 20px;
+}
 @media (max-width: 576px) {
   body {
     font-family: var(--page-font);
     width: 50%;
     text-align: center;
     width: 420px;
+    margin-left: 15px;
   }
   .heading-hero {
     text-align: center;
@@ -165,6 +236,50 @@ div p {
     padding: 16px 28px;
     font-size: 16px;
     margin-top: 50px;
+  }
+  .about-hero,
+  .work-hero {
+    padding-top: 184px;
+    width: 420px;
+    height: 959px;
+    background-color: var(--background-color);
+  }
+  .profile h1 {
+    font-size: 44px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .work-hero h1 {
+    font-size: 44px;
+    text-align: center;
+    width: 420px;
+  }
+  .work-app {
+    height: 500px;
+  }
+  .profile h2 {
+    font-size: 14px;
+    color: var(--sub-heading-color);
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  .profile p {
+    font-size: 12px;
+    width: 390px;
+    height: 140px;
+    font-size: 16px;
+    color: var(--sub-heading-color);
+    opacity: 70%;
+    line-height: 30px;
+  }
+  .profile-image {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -246,5 +361,48 @@ div p {
     color: #885df1;
     padding: 18px 30px;
     font-size: 18px;
+  }
+  .about-hero,
+  .work-hero {
+    padding-top: 184px;
+    width: 760px;
+    height: 959px;
+    background-color: var(--background-color);
+  }
+  .profile h1 {
+    font-size: 64px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .profile h2 {
+    font-size: 18px;
+    color: var(--sub-heading-color);
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  .profile p {
+    font-size: 16px;
+    width: 514px;
+    height: 140px;
+    color: var(--sub-heading-color);
+    opacity: 70%;
+    line-height: 30px;
+  }
+  .profile-image {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .work-app p {
+    font-size: 14px;
+    color: var(--sub-heading-color);
+    opacity: 70%;
+    width: 520px;
+    margin-top: 5px;
+    text-align: center;
   }
 }
