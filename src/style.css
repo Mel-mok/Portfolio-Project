@@ -7,7 +7,7 @@
 }
 body {
   font-family: var(--page-font);
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
 }
 .heading-hero {
@@ -67,7 +67,7 @@ h4 {
   height: 70px;
   margin-top: 102px;
 }
-div p {
+.home-app p {
   font-size: 16px;
   color: var(--sub-heading-color);
   opacity: 70%;
@@ -146,8 +146,8 @@ div p {
   font-size: 14px;
   color: var(--sub-heading-color);
   opacity: 70%;
-  width: 336px;
   margin-top: 5px;
+  height: 70px;
 }
 .work-image {
   width: 560px;
@@ -159,7 +159,6 @@ div p {
     width: 50%;
     text-align: center;
     width: 420px;
-    margin-left: 15px;
   }
   .heading-hero {
     text-align: center;
@@ -220,7 +219,7 @@ div p {
     height: 70px;
     margin-top: 42px;
   }
-  div p {
+  .home-app p {
     font-size: 12px;
     color: var(--sub-heading-color);
     opacity: 70%;
@@ -252,14 +251,7 @@ div p {
     line-height: 1;
     margin-bottom: 5px;
   }
-  .work-hero h1 {
-    font-size: 44px;
-    text-align: center;
-    width: 420px;
-  }
-  .work-app {
-    height: 500px;
-  }
+
   .profile h2 {
     font-size: 14px;
     color: var(--sub-heading-color);
@@ -281,8 +273,40 @@ div p {
     border-radius: 20px;
     margin-top: 10px;
   }
+  .work-hero h1 {
+    font-size: 44px;
+    text-align: center;
+    width: 90%;
+    height: 170px;
+  }
+  .work-app {
+    height: 500px;
+    text-align: center;
+    width: 540px;
+    margin-top: 10px;
+  }
+  .work-app h2 {
+    font-size: 24px;
+    color: var(--sub-heading-color);
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .work-app p {
+    font-size: 14px;
+    color: var(--sub-heading-color);
+    opacity: 70%;
+    margin-top: 5px;
+    height: 70px;
+  }
+  .work-image {
+    width: 360px;
+    border-radius: 20px;
+  }
+  .container {
+    width: 90%;
+  }
 }
-@media (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
   body {
     font-family: var(--page-font);
     width: 700px;
@@ -345,7 +369,7 @@ div p {
     height: 70px;
     margin-top: 102px;
   }
-  div p {
+  .about-app p {
     font-size: 22px;
     color: var(--sub-heading-color);
     opacity: 70%;
@@ -382,6 +406,12 @@ div p {
     color: var(--sub-heading-color);
     margin-top: 20px;
     font-weight: 400;
+  }
+  .work-hero h1 {
+    width: 525px;
+    height: 170px;
+    font-size: 64px;
+    text-align: center;
   }
   .profile p {
     font-size: 16px;
