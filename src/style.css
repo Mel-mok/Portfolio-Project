@@ -153,6 +153,9 @@ h4 {
   width: 560px;
   border-radius: 20px;
 }
+a{
+  color:var(--branding-color);
+}
 @media (max-width: 576px) {
   body {
     font-family: var(--page-font);
