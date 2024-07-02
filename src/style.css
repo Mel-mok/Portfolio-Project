@@ -7,73 +7,84 @@
 }
 body {
   font-family: var(--page-font);
-  width: 80%;
   margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  color: var(--sub-heading-color);
 }
 .heading-hero {
   text-align: center;
   padding-top: 184px;
-  width: 1440px;
-  height: 700px;
+  height: 600px;
   background-color: var(--background-color);
 }
-
-h3 {
-  color: var(--sub-heading-color);
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
+.page-content {
+  padding-top: 184px;
+  height: 600px;
+  background-color: var(--background-color);
+  margin-left: 20px;
 }
-h1 {
-  font-family: var(--heading-font);
-  font-weight: bold;
+.heading-hero h1 {
   color: black;
   font-size: 96px;
-  margin: 0;
+  line-height: 1;
 }
-h2 {
-  color: var(--sub-heading-color);
+h1 {
+  color: black;
+  font-size: 64px;
+  line-height: 1;
+}
+.heading-hero h2 {
   font-size: 24px;
   margin-top: 12px;
   margin-bottom: 49px;
   font-weight: 400;
 }
-.btn {
+h2 {
+  font-size: 24px;
+  font-family: var(--page-font);
+}
+h3 {
+  font-size: 24px;
+  font-family: var(--page-font);
+}
+h4 {
+  font-size: 48px;
+}
+h5 {
+  font-size: 18px;
+  font-family: var(--page-font);
+}
+.heading-hero p {
+  font-size: 36px;
+  color: var(--sub-heading-color);
+}
+p {
+  font-size: 16px;
+  color: var(--sub-heading-color);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.btn-page {
   background-color: var(--branding-color);
   border-radius: 4px;
   border-color: var(--branding-color);
   padding: 18px 30px;
   margin: 10px;
   font-size: 18px;
+  color: white;
 }
-section {
-  width: 1440px;
-  height: 1999px;
-  margin-top: 24px;
-}
-.section-title {
-  width: 1440px;
-  text-align: center;
-  font-size: 18px;
-  color: var(--sub-heading-color);
-  margin-top: 90px;
-  font-weight: 400;
-}
-h4 {
-  font-family: var(--heading-font);
-  font-size: 64px;
-  font-weight: bold;
-  width: 514px;
-  height: 70px;
-  margin-top: 102px;
-}
-.home-app p {
-  font-size: 16px;
-  color: var(--sub-heading-color);
-  opacity: 70%;
-  line-height: 30px;
-  width: 514px;
-  height: 140px;
+.app-content {
+  width: 50%;
+  height: 50%;
 }
 
 .button-link {
@@ -84,358 +95,152 @@ h4 {
   padding: 18px 30px;
   font-size: 18px;
 }
-.about-hero {
-  padding-top: 184px;
-  width: 1160px;
-  height: 759px;
-  background-color: var(--background-color);
+.heading {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
-.profile h1 {
-  font-size: 64px;
-  font-family: var(--heading-font);
-  font-weight: bold;
-  color: black;
-  line-height: 1;
-  margin-bottom: 5px;
+
+.logo {
+  max-width: 150px;
+  position: fixed;
+  left: 90px;
+  top: 14px;
 }
-.profile h2 {
-  font-size: 18px;
+.nav {
+  padding: 20px 0 20px 20px;
+  width: 100%;
+}
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+.nav li a {
+  text-decoration: none;
   color: var(--sub-heading-color);
-  margin-top: 20px;
-  font-weight: 400;
+  font-size: 14px;
+  margin: 0 20px;
 }
-.profile p {
-  font-size: 16px;
-  width: 475px;
-  height: 140px;
-  font-size: 16px;
-  color: var(--sub-heading-color);
-  opacity: 70%;
-  line-height: 30px;
+.nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-left: 250px;
+}
+.nav a:hover {
+  color: var(--branding-color);
+}
+.active {
+  color: var(--branding-color);
 }
 .profile-image {
-  width: 500px;
-  height: 560px;
+  width: 100%;
+  height: 90%;
   border-radius: 20px;
 }
-.work-hero {
-  padding-top: 184px;
-  height: 2509px;
-  background-color: var(--background-color);
-  margin: 0 30px 5px 0;
-}
-
-.work-hero h1 {
-  font-size: 64px;
-  font-family: var(--heading-font);
-  font-weight: bold;
-  color: black;
-  line-height: 1;
-  margin-bottom: 5px;
-  width: 825px;
-  height: 170px;
-}
-
-.work-app h2 {
-  font-size: 24px;
-  color: var(--sub-heading-color);
-  font-weight: bold;
-  margin-bottom: 0;
-}
-.work-app p {
-  font-size: 14px;
-  color: var(--sub-heading-color);
-  opacity: 70%;
-  margin-top: 5px;
-  height: 70px;
-}
-.work-image {
-  width: 560px;
-  border-radius: 20px;
-}
-a{
-  color:var(--branding-color);
+a {
+  color: var(--branding-color);
 }
 @media (max-width: 576px) {
   body {
-    font-family: var(--page-font);
-    width: 50%;
     text-align: center;
-    width: 420px;
+    margin-bottom: 60px;
+  }
+  .page-content {
+    padding-top: 124px;
+    height: 400px;
   }
   .heading-hero {
-    text-align: center;
     padding-top: 144px;
-    width: 420px;
-    height: 450px;
-    background-color: var(--background-color);
   }
 
   h3 {
-    color: var(--sub-heading-color);
     font-size: 28px;
-    font-weight: bold;
     margin: 0;
   }
-  h1 {
-    font-family: var(--heading-font);
-    font-weight: bold;
-    color: black;
+  .heading-hero h1 {
     font-size: 75px;
-    margin: 0;
+  }
+  .heading-hero h2 {
+    font-size: 16px;
+  }
+  .heading-hero p {
+    font-size: 24px;
+    font-weight: bold;
   }
   h2 {
-    color: var(--sub-heading-color);
     font-size: 14px;
     margin-top: 12px;
-    margin-bottom: 49px;
-    font-weight: 400;
   }
-  .btn {
-    background-color: var(--branding-color);
-    border-radius: 4px;
-    border-color: var(--branding-color);
-    padding: 16px 28px;
-    margin: 20px 10px;
-    font-size: 16px;
-  }
-  section {
-    width: 390px;
-    height: 1599px;
-    margin-top: 64px;
+  .app-content {
+    width: 100%;
+    height: 100%;
     text-align: center;
-  }
-  .section-title {
-    width: 390px;
-    text-align: center;
-    font-size: 12px;
-    color: var(--sub-heading-color);
-    margin-top: 95px;
-    font-weight: 400;
-    padding-top: 95px;
-  }
-  h4 {
-    font-family: var(--heading-font);
-    font-size: 48px;
-    font-weight: bold;
-    width: 390px;
-    height: 70px;
-    margin-top: 42px;
-  }
-  .home-app p {
-    font-size: 12px;
-    color: var(--sub-heading-color);
-    opacity: 70%;
-    line-height: 25px;
-    width: 370px;
-    height: 140px;
-  }
-  .button-link {
-    background-color: #fff;
-    border-radius: 4px;
-    border-color: #885df1;
-    color: #885df1;
-    padding: 16px 28px;
-    font-size: 16px;
-    margin-top: 50px;
-  }
-  .about-hero,
-  .work-hero {
-    padding-top: 184px;
-    width: 420px;
-    height: 959px;
-    background-color: var(--background-color);
-  }
-  .profile h1 {
-    font-size: 44px;
-    font-family: var(--heading-font);
-    font-weight: bold;
-    color: black;
-    line-height: 1;
-    margin-bottom: 5px;
   }
 
-  .profile h2 {
-    font-size: 14px;
-    color: var(--sub-heading-color);
-    margin-top: 20px;
-    font-weight: 400;
+  h4 {
+    font-size: 48px;
   }
-  .profile p {
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .nav {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .nav li a {
     font-size: 12px;
-    width: 390px;
-    height: 140px;
-    font-size: 16px;
-    color: var(--sub-heading-color);
-    opacity: 70%;
-    line-height: 30px;
+    margin: 0 15px;
   }
-  .profile-image {
-    width: 260px;
-    height: 260px;
-    border-radius: 20px;
-    margin-top: 10px;
-  }
-  .work-hero h1 {
-    font-size: 44px;
-    text-align: center;
-    width: 90%;
-    height: 170px;
-  }
-  .work-app {
-    height: 500px;
-    text-align: center;
-    width: 540px;
-    margin-top: 10px;
-  }
-  .work-app h2 {
-    font-size: 24px;
-    color: var(--sub-heading-color);
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  .work-app p {
-    font-size: 14px;
-    color: var(--sub-heading-color);
-    opacity: 70%;
-    margin-top: 5px;
-    height: 70px;
-  }
-  .work-image {
-    width: 360px;
-    border-radius: 20px;
-  }
+
   .container {
     width: 90%;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
   body {
-    font-family: var(--page-font);
-    width: 700px;
+    text-align: center;
+    margin-bottom: 100px;
   }
   .heading-hero {
-    text-align: center;
-    padding-top: 184px;
-    width: 700px;
-    height: 700px;
-    background-color: var(--background-color);
+    padding-top: 144px;
+  }
+  .heading-hero h1 {
+    font-size: 85px;
   }
 
-  h3 {
-    color: var(--sub-heading-color);
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-  }
-  h1 {
-    font-family: var(--heading-font);
-    font-weight: bold;
-    color: black;
-    font-size: 86px;
-    margin: 0;
-  }
-  h2 {
-    color: var(--sub-heading-color);
+  .heading-hero p {
     font-size: 24px;
-    margin-top: 12px;
-    margin-bottom: 49px;
-    font-weight: 400;
   }
-  .btn {
-    background-color: var(--branding-color);
-    border-radius: 4px;
-    border-color: var(--branding-color);
-    padding: 18px 30px;
-    margin: 10px;
-    font-size: 18px;
-  }
-  section {
-    width: 700px;
-    height: 1999px;
-    margin-top: 24px;
+  .app-content {
+    width: 100%;
+    height: 100%;
     text-align: center;
-  }
-  .section-title {
-    width: 700px;
-    text-align: center;
-    font-size: 18px;
-    color: var(--sub-heading-color);
-    margin-top: 90px;
-    font-weight: 400;
   }
   h4 {
-    font-family: var(--heading-font);
-    font-size: 74px;
-    font-weight: bold;
-    width: 514px;
-    height: 70px;
-    margin-top: 102px;
-  }
-  .about-app p {
-    font-size: 22px;
-    color: var(--sub-heading-color);
-    opacity: 70%;
-    line-height: 30px;
-    width: 614px;
-    height: 160px;
+    font-size: 48px;
   }
 
-  .button-link {
-    background-color: #fff;
-    border-radius: 4px;
-    border-color: #885df1;
-    color: #885df1;
-    padding: 18px 30px;
-    font-size: 18px;
+  h1 {
+    font-size: 86px;
   }
-  .about-hero,
-  .work-hero {
-    padding-top: 184px;
-    width: 760px;
-    height: 959px;
-    background-color: var(--background-color);
+  h2 {
+    font-size: 24px;
   }
-  .profile h1 {
-    font-size: 64px;
-    font-family: var(--heading-font);
-    font-weight: bold;
-    color: black;
-    line-height: 1;
-    margin-bottom: 5px;
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
-  .profile h2 {
-    font-size: 18px;
-    color: var(--sub-heading-color);
-    margin-top: 20px;
-    font-weight: 400;
+  .nav {
+    padding: 20px 0 20px 20px;
+    width: 100%;
   }
-  .work-hero h1 {
-    width: 525px;
-    height: 170px;
-    font-size: 64px;
-    text-align: center;
-  }
-  .profile p {
-    font-size: 16px;
-    width: 514px;
-    height: 140px;
-    color: var(--sub-heading-color);
-    opacity: 70%;
-    line-height: 30px;
-  }
-  .profile-image {
-    width: 260px;
-    height: 260px;
-    border-radius: 20px;
-    margin-top: 10px;
-  }
-  .work-app p {
-    font-size: 14px;
-    color: var(--sub-heading-color);
-    opacity: 70%;
-    width: 520px;
-    margin-top: 5px;
-    text-align: center;
+}
+@media (min-width: 900px) {
+  .nav {
+    padding: 20px 0 20px 80px;
+    width: 100%;
   }
 }
