@@ -8,6 +8,8 @@
 body {
   font-family: var(--page-font);
   margin: 0 auto;
+  width: 90%;
+  height: fit-content;
 }
 h1,
 h2,
@@ -27,8 +29,8 @@ h6 {
 }
 .page-content {
   padding-top: 184px;
-  height: 600px;
   background-color: var(--background-color);
+  height: 600px;
   margin-left: 20px;
 }
 .heading-hero h1 {
@@ -72,7 +74,6 @@ p {
   font-weight: 400;
   line-height: 30px;
 }
-
 .btn-page {
   background-color: var(--branding-color);
   border-radius: 4px;
@@ -103,16 +104,26 @@ p {
 .logo {
   max-width: 150px;
   position: fixed;
-  left: 90px;
-  top: 14px;
+  left: 55px;
+  top: 24px;
+}
+.nav-body {
+  justify-content: right;
+  padding-top: 20px;
+  position: fixed;
+  background-color: white;
+  width: 80%;
+  right: 20px;
 }
 .nav {
-  padding: 20px 0 20px 20px;
   width: 100%;
+  text-align: end;
+  margin-right: 50px;
 }
 .nav li {
   list-style-type: none;
-  display: inline-block;
+  display: inline;
+  line-height: 48px;
 }
 .nav li a {
   text-decoration: none;
@@ -124,12 +135,11 @@ p {
   padding: 0;
   margin: 0;
   width: 100%;
-  margin-left: 250px;
 }
 .nav a:hover {
   color: var(--branding-color);
 }
-.active {
+li .active a {
   color: var(--branding-color);
 }
 .profile-image {
@@ -140,6 +150,67 @@ p {
 a {
   color: var(--branding-color);
 }
+footer {
+  margin: 60px 0;
+}
+.email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+.email-link:hover {
+  color: var(--branding-color);
+}
+footer .contact-btn:hover {
+  border: 1px solid var(--branding-color);
+  color: var(--branding-color);
+  background: white;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: var(--background-color);
+  padding: 10px 4px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--background-color);
+}
+footer .contact-box {
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 10px;
+}
+footer .contact-box h4 {
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-size: 48px;
+}
+footer .contact-box p {
+  padding-left: 40px;
+  margin-left: 20px;
+}
+.contact-a {
+  justify-content: end;
+}
+footer .contact-box a {
+  margin-right: 70px;
+}
+
 @media (max-width: 576px) {
   body {
     text-align: center;
@@ -147,7 +218,7 @@ a {
   }
   .page-content {
     padding-top: 124px;
-    height: 400px;
+    margin-left: 0px;
   }
   .heading-hero {
     padding-top: 144px;
@@ -186,16 +257,53 @@ a {
     width: 100%;
   }
   .nav {
-    padding: 20px 0;
     width: 100%;
-  }
-  .nav li a {
-    font-size: 12px;
-    margin: 0 15px;
+    text-align: center;
+    margin-right: 0px;
   }
 
-  .container {
+  .nav-body {
+    justify-content: center;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .nav li a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  /*.container {
     width: 90%;
+  }*/
+  footer .contact-box {
+    padding-top: 20px;
+    text-align: center;
+  }
+  footer .contact-box h4 {
+    font-size: 36px;
+    padding-left: 0px;
+  }
+  footer .contact-box p {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .contact-a {
+    justify-content: center;
+  }
+  footer .contact-box a {
+    margin-right: 0px;
+  }
+  .email-link {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  footer .social-links {
+    margin-top: 20px;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -228,19 +336,80 @@ a {
   h2 {
     font-size: 24px;
   }
+  .logo {
+    width: 50%;
+  }
+  .nav-body {
+    padding-top: 22px;
+    padding-right: 0px;
+    margin-right: 0;
+  }
   .nav ul {
     padding: 0;
     margin: 0;
     width: 100%;
   }
+  .nav li a {
+    margin: 0 10px;
+  }
   .nav {
-    padding: 20px 0 20px 20px;
     width: 100%;
   }
-}
-@media (min-width: 900px) {
-  .nav {
-    padding: 20px 0 20px 80px;
-    width: 100%;
+  footer .contact-box {
+    padding-top: 20px;
+    text-align: center;
+  }
+  footer .contact-box h4 {
+    font-size: 40px;
+    padding-left: 0px;
+  }
+  footer .contact-box p {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .contact-a {
+    justify-content: center;
+  }
+  footer .contact-box a {
+    margin-right: 0px;
+  }
+  .email-link {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  footer .social-links {
+    margin-top: 20px;
   }
 }
+/*@media (min-width: 768px) {
+  body {
+    margin-bottom: 100px;
+  }
+  .app-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .logo {
+    width:100%;
+  }
+  .nav-body{
+    text-align:end;
+    padding-top:22px;
+    padding-right:0px;
+    margin-right:0;
+  }
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .nav li a {
+    margin: 0 20px;
+  }
+  .nav {
+    width: 100%;
+  }
+ 
+}*/
