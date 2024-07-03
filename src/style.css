@@ -113,7 +113,7 @@ p {
   position: fixed;
   background-color: white;
   width: 80%;
-  right: 20px;
+  right: 30px;
 }
 .nav {
   width: 100%;
@@ -139,7 +139,7 @@ p {
 .nav a:hover {
   color: var(--branding-color);
 }
-li .active a {
+ul .active a {
   color: var(--branding-color);
 }
 .profile-image {
